@@ -1,0 +1,100 @@
+@font-face {
+  src: url("fonts/URW\ DIN\ Arabic\ Regular.ttf");
+  font-family: DIN-ARABIC;
+}
+
+:root {
+  /* COLORS */
+  --color-primary: #004e82;
+  --color-secondary: #dda01d;
+  --color-white-cream: #f1f1e6;
+  --color-green: #32867f;
+  --color-light-blue: #0076a3;
+  --color-darkest: #333;
+  --color-white: #fff;
+  --color-grey: #666;
+  /* SPACING */
+
+  /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+  --spacing-2XS: 0.2rem;
+  --spacing-XS: 0.4rem;
+  --spacing-SM: 0.8rem;
+  --spacing-MD: 1.2rem;
+  --spacing-LG: 1.6rem;
+  --spacing-XL: 2.4rem;
+  --spacing-2XL: 3.2rem;
+  --spacing-3XL: 4.8rem;
+  --spacing-4XL: 6.4rem;
+  --spacing-5XL: 8rem;
+  --spacing-6XL: 9.6rem;
+  --spacing-HUGE: 12.8rem;
+
+  /* SIZING */
+  --sizing-2XS: 0.125rem;
+  --sizing-XS: 0.25rem;
+  --sizing-SM: 0.5rem;
+  --sizing-MD: 0.75rem;
+  --sizing-LG: 1rem;
+  --sizing-XL: 1.5rem;
+  --sizing-2XL: 2rem;
+  --sizing-3XL: 2.5rem;
+  --sizing-4XL: 3rem;
+  --sizing-5XL: 3.5rem;
+  --sizing-6XL: 4rem;
+  /* FONT FAMILY */
+
+  /* FONT SIZE */
+  --font-size-XS: 0.6875rem;
+  --font-size-SM: 0.8125rem;
+  --font-size-MD: 0.9375rem;
+  --font-size-LG: 1rem;
+  --font-size-XL: 1.25rem;
+  --font-size-2XL: 1.5rem;
+  --font-size-3XL: 2rem;
+  --font-size-4XL: 2.5rem;
+  --font-size-5XL: 3rem;
+  --font-size-6XL: 3.5rem;
+  /* FONT WEIGHT */
+  --font-weight-med: 500;
+  --font-weight-bld: 700;
+  /* RADIUS */
+  --border-radius-XS: 0.125rem;
+  --border-radius-SM: 0.1875rem;
+  --border-radius-MD: 0.375rem;
+  --border-radius-LG: 0.75rem;
+  --border-radius-XL: 4rem;
+  --border-radius-round: 50%;
+  /* LINE HEIGHT */
+  --line-height-XS: 1;
+  --line-height-SM: 1.125;
+  --line-height-MD: 1.25;
+  --line-height-LG: 1.5;
+  --line-height-XL: 2;
+  /* TRANSITIONS */
+  --transition-1: 200ms ease-in-out;
+  --transition-2: 300ms ease-in-out;
+  --transition-3: 500ms ease-in-out;
+  --transition-4: 750ms ease-in-out;
+  /* Z-INDEX */
+  --z-index-backtap: -1;
+  --z-index-second-layer: 99;
+  --z-index-third-layer: 999;
+  --z-index-fourth-layer: 9999;
+  /* BOX-SHADOW */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: DIN-ARABIC, "";
+}
+
+body {
+  font-size: 19rem;
+}
