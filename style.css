@@ -1,4 +1,4 @@
-@font-face {
+```css @font-face {
   src: url("fonts/URW\ DIN\ Arabic\ Regular.ttf");
   font-family: DIN-ARABIC;
 }
@@ -96,5 +96,61 @@ html {
 }
 
 body {
-  font-size: 19rem;
+}
+
+header {
+  margin: 0 auto;
+  width: 1600px;
+  padding-top: var(--spacing-2XL);
+  padding: var(--spacing-2XL) 0 var(--spacing-4XL) 0;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: var(--font-size-4XL);
+}
+.nav-logo {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+.nav-list {
+  display: flex;
+  gap: var(--spacing-3XL);
+  list-style: none;
+}
+.list-link:link,
+.list-link:visited {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.list-link:hover,
+.list-link:active {
+  color: var(--color-light-blue);
+}
+
+.list-link::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-secondary);
+  transition: 0.3s;
+}
+
+.list-link:hover::before {
+  width: 100%;
+}
+.header-lang:link,
+.header-lang:visited {
+  color: var(--color-primary);
+  transition: all 0.3s;
+}
+.header-lang:hover,
+.header-lang:active {
+  color: var(--color-secondary);
 }
