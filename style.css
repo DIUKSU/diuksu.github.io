@@ -13,6 +13,7 @@
   --color-darkest: #333;
   --color-white: #fff;
   --color-grey: #666;
+
   /* SPACING */
 
   /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
@@ -98,3 +99,121 @@ html {
 body {
   font-size: 19rem;
 }
+
+
+/*Here is hero section part*/
+:root {
+  --mainColor: rgb(0, 0, 0);
+
+}
+
+c * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  background-color: var(--mainColor);
+
+}
+
+
+.container {
+  height: 600px;
+  padding: 20 px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+}
+
+.container img {
+  width: 80%;
+  height: 300px;
+  border-radius: 2.5em;
+}
+
+.hero-text {
+  width: 80%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  color: rgb(43, 43, 97);
+
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: rgb(167, 178, 188);
+  ;
+
+}
+
+button {
+  padding: 1em 2.1em 1.1em;
+  border-radius: 4px;
+  margin: 8px;
+  border: none;
+  background-color: rgb(206, 202, 218);
+  font-weight: 800;
+  font-size: 0.85em;
+  text-transform: none;
+  text-align: center;
+  box-shadow: 0em -0.2rem 0em #fff inset;
+  transition: color 3s ease-in-out;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #7c8ab2;
+  cursor: pointer;
+
+}
+
+@media (max-width:848px) {
+  .container {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+
+    font-size: 3rem;
+
+  }
+
+
+}
+
+@media (max-width:678px) {
+
+  .hero-text h1 {
+
+    font-size: 2rem;
+
+  }
+
+
+}
+
+
+@media (max-width:428px) {
+
+  nav ul {
+    display: none;
+  }
+
+}
+
+/* End of hero section part in css */

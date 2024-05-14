@@ -1,235 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="DIU website" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DIU website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
 
 
-    <style>
-      body {
-        font-family: Arial;
-        margin: 0;
-      }
-      
-      * {
-        box-sizing: border-box;
-      }
-      
-      img {
-        vertical-align: middle;
-      }
-      
-      /* Position the image container (needed to position the left and right arrows) */
-      .container {
-        position: relative;
-      }
-      
-      /* Hide the images by default */
-      .mySlides {
-        display: none;
-        
-      }
-      
-      /* Add a pointer when hovering over the thumbnail images */
-      .cursor {
-        cursor: pointer;
-      }
-      
-      /* Next & previous buttons */
-      .prev,
-      .next {
-        cursor: pointer;
-        position: absolute;
-        top: 40%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: black;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
-      }
-      
-      /* Position the "next button" to the right */
-      .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      
-      /* On hover, add a black background color with a little bit see-through */
-      .prev:hover,
-      .next:hover {
-        background-color: rgba(0, 0, 0, 0.3);
-      }
-      
-      /* Number text (1/3 etc) */
-      .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-      }
-      
-      /* Container for image text */
-      .caption-container {
-        text-align: center;
-        background-color: #222;
-        padding: 2px 16px;
-        color: white;
-      }
-      
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      
-      /* Six columns side by side */
-      .column {
-        float: left;
-        width: 16.66%;
-      }
-      
-      /* Add a transparency effect for thumnbail images */
-      .demo {
-        opacity: 0.6;
-      }
-      
-      .active,
-      .demo:hover {
-        opacity: 1;
-      }
-      </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href=""><img src="" alt="" /></a>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href="">hello world</a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Test -->
-    <!-- Test from second account -->
-    <main>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href=""><img src="" alt="" /></a>
+      <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href="">hello world</a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Test -->
+  <!-- Test from second account -->
+  <main>
 
 
-      <!-- Gallery  -->
-<h2 style="text-align:center">Slideshow Gallery</h2>
+    <!-- Gallery  -->
+    <h2 style="text-align:center">Slideshow Gallery</h2>
 
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eo_circle_blue_number-1.svg/768px-Eo_circle_blue_number-1.svg.png" style="width:25%">
-  </div>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eo_circle_blue_number-1.svg/768px-Eo_circle_blue_number-1.svg.png"
+          style="width:25%">
+      </div>
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Icon_2_red.svg/1200px-Icon_2_red.svg.png" style="width:25%">
-  </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Icon_2_red.svg/1200px-Icon_2_red.svg.png"
+          style="width:25%">
+      </div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="https://cdn-icons-png.freepik.com/512/9260/9260269.png" style="width:25%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Eo_circle_brown_number-4.svg/2048px-Eo_circle_brown_number-4.svg.png" style="width:25%">
-  </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="https://cdn-icons-png.freepik.com/512/9260/9260269.png" style="width:25%">
+      </div>
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="https://cdn-icons-png.flaticon.com/512/3601/3601646.png" style="width:25%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="https://cdn-icons-png.flaticon.com/128/10093/10093645.png" style="width:25%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Eo_circle_brown_number-4.svg/2048px-Eo_circle_brown_number-4.svg.png"
+          style="width:25%">
+      </div>
 
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3601/3601646.png" style="width:25%">
+      </div>
 
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eo_circle_blue_number-1.svg/768px-Eo_circle_blue_number-1.svg.png" style="width:100%" onclick="currentSlide(1)" alt="1">
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="https://cdn-icons-png.flaticon.com/128/10093/10093645.png" style="width:25%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Eo_circle_blue_number-1.svg/768px-Eo_circle_blue_number-1.svg.png"
+            style="width:100%" onclick="currentSlide(1)" alt="1">
+        </div>
+        <div class="column">
+          <img class="demo cursor"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Icon_2_red.svg/1200px-Icon_2_red.svg.png"
+            style="width:100%" onclick="currentSlide(2)" alt=" 2">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://cdn-icons-png.freepik.com/512/9260/9260269.png" style="width:100%"
+            onclick="currentSlide(3)" alt=" 3 ">
+        </div>
+        <div class="column">
+          <img class="demo cursor"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Eo_circle_brown_number-4.svg/2048px-Eo_circle_brown_number-4.svg.png"
+            style="width:100%" onclick="currentSlide(4)" alt=" 4">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://cdn-icons-png.flaticon.com/512/3601/3601646.png" style="width:100%"
+            onclick="currentSlide(5)" alt=" 5 ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://cdn-icons-png.flaticon.com/128/10093/10093645.png" style="width:100%"
+            onclick="currentSlide(6)" alt="6 ">
+        </div>
+      </div>
     </div>
-    <div class="column">
-      <img class="demo cursor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Icon_2_red.svg/1200px-Icon_2_red.svg.png" style="width:100%" onclick="currentSlide(2)" alt=" 2">
+    <!-- end of Gallery -->
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+
+    <!--Here is hero section part it is about : -Main text + button -->
+    <div class="container">
+      <img src="C:\Users\shahad\OneDrive\Documents\HerosectionSAMPLE\images\photo 2.jpg">
+      <div class="hero-text">
+        <h1>Prefect place for creativity</h1>
+        <p>Digital innovation club. Make voice for your brain,
+          be with us
+        </p>
+        <button>Register Now</button>
+      </div>
+
     </div>
-    <div class="column">
-      <img class="demo cursor" src="https://cdn-icons-png.freepik.com/512/9260/9260269.png" style="width:100%" onclick="currentSlide(3)" alt=" 3 ">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Eo_circle_brown_number-4.svg/2048px-Eo_circle_brown_number-4.svg.png" style="width:100%" onclick="currentSlide(4)" alt=" 4">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://cdn-icons-png.flaticon.com/512/3601/3601646.png" style="width:100%" onclick="currentSlide(5)" alt=" 5 ">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="https://cdn-icons-png.flaticon.com/128/10093/10093645.png" style="width:100%" onclick="currentSlide(6)" alt="6 ">
-    </div>
-  </div>
-</div>
-<!-- end of Gallery -->
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    <!--End of hero section part-->
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  </main>
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
-    </main>
+  <footer></footer>
+</body>
 
-    <footer></footer>
-  </body>
 </html>
